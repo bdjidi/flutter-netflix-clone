@@ -12,8 +12,7 @@ dependencies:
   rxdart: ^0.20.0
   http: ^0.12.0
   video_player: ^0.8.0
-  fluro:
-    path: ../../FlutterLibs/fluro
+  fluro: ^1.4.0
 
 dev_dependencies:
   flutter_test:

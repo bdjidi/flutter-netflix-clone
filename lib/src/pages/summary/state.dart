@@ -8,7 +8,7 @@ class SummaryState extends State<Summary> {
       '${Routes.filter}',
       transition: TransitionType.nativeModal,
       transitionDuration: const Duration(milliseconds: 200),
-      object: {'type': type},
+      // object: {'type': type},
     );
   }
 
@@ -18,7 +18,7 @@ class SummaryState extends State<Summary> {
       '${Routes.detail}',
       transition: TransitionType.inFromRight,
       transitionDuration: const Duration(milliseconds: 200),
-      object: {'match': match, 'show': item},
+      // object: {'match': match, 'show': item},
     );
   }
 
@@ -30,7 +30,7 @@ class SummaryState extends State<Summary> {
       Application.router.navigateTo(
         context,
         Routes.video,
-        object: {'title': 'Unforgettable'},
+        // object: {'title': 'Unforgettable'},
         transition: TransitionType.inFromBottom,
         transitionDuration: const Duration(milliseconds: 200),
       );
