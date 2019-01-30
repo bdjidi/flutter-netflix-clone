@@ -9,10 +9,14 @@ import 'package:http/http.dart' show Client;
 import 'package:rxdart/rxdart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 // Plugins import...
 import 'package:fluro/fluro.dart';
 import 'package:video_player/video_player.dart';
+
+// Internationalization
+import 'src/lang/localizations.dart';
 
 // Router
 part 'src/helpers/config/constants.dart';
@@ -62,8 +66,29 @@ class Netflix extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: [
+        AppLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+          Locale('en'), // English
+          Locale('es'), // Spanish
+          Locale('it'), // Italian
+          Locale('fr'), // French
+          Locale('pt'), // Portuguese
+          Locale('ja'), // Japanese
+          Locale('ru'), // Russian
+          Locale('pl'), // Polish
+          Locale('ko'), // Korean
+          Locale('zh'), // Chinese
+          Locale('de'), // German
+          Locale('ar'), // Arabic
+      ],
       debugShowCheckedModeBanner: true,
-      title: 'Netflix',
+      // title: 'Netflix',
+      onGenerateTitle: (BuildContext context) =>
+          AppLocalizations.of(context).title,
       theme: ThemeData(
         fontFamily: 'GoogleSans',
         primaryColor: Colors.black,
