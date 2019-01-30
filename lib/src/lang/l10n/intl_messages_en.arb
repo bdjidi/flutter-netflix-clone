@@ -7,4 +7,39 @@
     "type": "text",
     "placeholders": {}
   }
+
+  "home": "Home",
+  "@home": {
+    "description": "The application title",
+    "type": "text",
+    "placeholders": {}
+  }
+
+  "search": "Search",
+  "@search": {
+    "description": "The application title",
+    "type": "text",
+    "placeholders": {}
+  }
+
+  "playing": "Playing",
+  "@playing": {
+    "description": "The application title",
+    "type": "text",
+    "placeholders": {}
+  }
+
+  "library": "Library",
+  "@library": {
+    "description": "The application title",
+    "type": "text",
+    "placeholders": {}
+  }
+
+  "options": "Options",
+  "@options": {
+    "description": "The application title",
+    "type": "text",
+    "placeholders": {}
+  }
 }

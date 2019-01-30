@@ -20,11 +20,11 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
         indicatorWeight: 0.1,
         controller: controller,
         tabs: <Widget>[
-          Tab(text: 'Inicio', icon: Icon(Icons.home)),
-          Tab(text: 'Buscar', icon: Icon(Icons.search)),
-          Tab(text: 'Próximamente', icon: Icon(Icons.ondemand_video)),
-          Tab(text: 'Descargas', icon: Icon(Icons.file_download)),
-          Tab(text: 'Más', icon: Icon(Icons.menu)),
+          Tab(text: AppLocalizations.of(context).home, icon: Icon(Icons.home)),
+          Tab(text: AppLocalizations.of(context).search, icon: Icon(Icons.search)),
+          Tab(text: AppLocalizations.of(context).playing, icon: Icon(Icons.ondemand_video)),
+          Tab(text: AppLocalizations.of(context).library, icon: Icon(Icons.file_download)),
+          Tab(text: AppLocalizations.of(context).options, icon: Icon(Icons.menu)),
         ],
       ),
       body: TabBarView(

@@ -86,9 +86,7 @@ class Netflix extends StatelessWidget {
           Locale('ar'), // Arabic
       ],
       debugShowCheckedModeBanner: true,
-      // title: 'Netflix',
-      onGenerateTitle: (BuildContext context) =>
-          AppLocalizations.of(context).title,
+      onGenerateTitle: (BuildContext context) => AppLocalizations.of(context).title,
       theme: ThemeData(
         fontFamily: 'GoogleSans',
         primaryColor: Colors.black,
