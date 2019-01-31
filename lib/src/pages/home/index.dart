@@ -5,5 +5,5 @@ class Home extends StatefulWidget {
   final String title;
 
   @override
-  HomeState createState() => HomeState();
+  _HomeState createState() => _HomeState();
 }

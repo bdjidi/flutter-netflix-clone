@@ -1,6 +1,6 @@
 part of netflix;
 
-class HomeState extends State<Home> with SingleTickerProviderStateMixin {
+class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   TabController controller;
 
   @override
